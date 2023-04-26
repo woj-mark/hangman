@@ -65,7 +65,7 @@ defmodule Hangman.Impl.Game do
   {game, tally(game)}
  end
 
- defp accept_guess(game, _guess, already_used = true) do
+ defp accept_guess(game, _guess, _already_used = true) do
   %{
     game | game_state: :already_used
   }
